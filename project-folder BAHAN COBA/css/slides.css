@@ -1,0 +1,26 @@
+/* Custom Styles for Slides Framework */
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #ffffff;
+    }
+}
+
+/* Custom animations */
+@keyframes customFadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.custom-fade-in {
+    animation: customFadeIn 0.8s ease-out;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .slide .content {
+        padding: 20px;
+    }
+}
